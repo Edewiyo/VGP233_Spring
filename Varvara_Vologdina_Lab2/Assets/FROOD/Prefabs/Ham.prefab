@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6207798274923662576}
   - component: {fileID: 367622603060310025}
   - component: {fileID: 4442079420542915362}
+  - component: {fileID: 4406853670606051219}
+  - component: {fileID: 1982914619922064335}
   m_Layer: 0
   m_Name: Ham
   m_TagString: Pickup
@@ -26,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100604612527670485}
-  m_LocalRotation: {x: -0.65317863, y: -0, z: -0, w: 0.7572038}
-  m_LocalPosition: {x: 0, y: -0.000000029479834, z: 0.000000025429934}
-  m_LocalScale: {x: 0.47757, y: 0.47757, z: 0.47757}
+  m_LocalRotation: {x: -0.7082044, y: 0, z: 0, w: 0.70600754}
+  m_LocalPosition: {x: 0, y: -0.000000025337727, z: 0.000000029559127}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -81.563, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.178, y: 0, z: 0}
 --- !u!33 &6207798274923662576
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -98,3 +100,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.0748444, y: 2.0410466, z: 2.0410464}
   m_Center: {x: 0, y: 8.881784e-16, z: 0.000000059604638}
+--- !u!114 &4406853670606051219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100604612527670485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c10e2221f857c2458dbe49a5c528f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+--- !u!114 &1982914619922064335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100604612527670485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 867791dbaf47f1b4bafa8880e60266d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

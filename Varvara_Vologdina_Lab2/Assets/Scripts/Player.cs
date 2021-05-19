@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     private float horizontalInput;
 
     private float rotate;
-
+    private bool isForward = true;
   
 
     // Start is called before the first frame update
@@ -24,13 +24,32 @@ public class Player : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        transform.Rotate(Vector3.down, turnSpeed * horizontalInput * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            transform.Rotate(Vector3.down, reverse);
-            
+            if(isForward)
+            {
+               isForward = false;
+               transform.Rotate(Vector3.down, reverse);
+
+            }
+            else
+            {
+                isForward = true;
+                transform.Rotate(Vector3.down, reverse);
+            }
+        }
+
+
+        if (isForward)
+        {
+           transform.Translate(Vector3.forward * Time.deltaTime * speed);
+           transform.Rotate(Vector3.down, turnSpeed * horizontalInput * Time.deltaTime);
+        }
+        else
+        {
+            transform.Translate(Vector3.back * Time.deltaTime * speed);
+            transform.Rotate(Vector3.down, turnSpeed * horizontalInput * Time.deltaTime);
         }
     }
 }

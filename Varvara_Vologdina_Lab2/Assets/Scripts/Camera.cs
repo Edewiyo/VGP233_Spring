@@ -5,7 +5,8 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     public GameObject player;
-    private Vector3 offset = new Vector3(0.85f, 2, -8.5f);
+    [SerializeField]
+    private Vector3 offset = new Vector3(0.97f, 2, -7.5f);
     // Start is called before the first frame update
     void Start()
     {
