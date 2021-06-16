@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6285696767658125967}
   - component: {fileID: 290427765019022966}
   - component: {fileID: 848663470110136101}
-  - component: {fileID: 63673996}
   - component: {fileID: 63673997}
   m_Layer: 0
   m_Name: Onigiri
@@ -99,18 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6148415, y: 1.4847113, z: 0.7870393}
   m_Center: {x: 0, y: 0.1710524, z: 0.00000001490116}
---- !u!114 &63673996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034246662423880362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 867791dbaf47f1b4bafa8880e60266d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &63673997
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3438924301421243871}
   - component: {fileID: 8972588852944310566}
   - component: {fileID: 7006268618342087479}
-  - component: {fileID: 4673658368727182158}
   m_Layer: 0
   m_Name: Steack
   m_TagString: Untagged
@@ -27,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7258074207491335674}
-  m_LocalRotation: {x: -0.36330813, y: 0, z: 0, w: 0.93166906}
-  m_LocalPosition: {x: 0, y: 0.0027477946, z: 0.0015289937}
+  m_LocalRotation: {x: -0.5655695, y: -0, z: -0, w: 0.8247006}
+  m_LocalPosition: {x: 0, y: 0.00470661, z: 0.0013456121}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -42.607, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -68.884, y: 0, z: 0}
 --- !u!33 &3438924301421243871
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -98,15 +97,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
---- !u!114 &4673658368727182158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7258074207491335674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 867791dbaf47f1b4bafa8880e60266d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

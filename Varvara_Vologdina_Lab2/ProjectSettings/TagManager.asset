@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Pickup
   - car
+  - cop
+  - barrier
   layers:
   - Default
   - TransparentFX

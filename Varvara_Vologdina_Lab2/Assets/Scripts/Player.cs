@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
 
     private float rotate;
     private bool isForward = true;
+    public bool isGameOver = false;
+    public bool isDead = false;
   
 
     // Start is called before the first frame update
@@ -22,8 +24,24 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(isDead == true) { return; }
         horizontalInput = Input.GetAxis("Horizontal");
-        
+        if(transform.position.z  >= 100)
+        {
+            speed = 15.0f;
+        }
+        else if (transform.position.z >= 500)
+        {
+            speed = 25.0f;
+        }
+        else if (transform.position.z >= 1000)
+        {
+            speed = 35.0f;
+        }
+        else if (transform.position.z >= 30000)
+        {
+            speed = 55.0f;
+        }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -50,6 +68,14 @@ public class Player : MonoBehaviour
         {
             transform.Translate(Vector3.back * Time.deltaTime * speed);
             transform.Rotate(Vector3.down, turnSpeed * horizontalInput * Time.deltaTime);
+        }
+
+        if(transform.position.y < -5 && isGameOver==false)
+        {
+            Destroy(gameObject);
+            GameObject.FindObjectOfType<GameManager>().GameOver();
+            isGameOver = true;
+
         }
     }
 }
